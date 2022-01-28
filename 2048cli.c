@@ -422,8 +422,10 @@ void make_move() {
 	case 'X':
 	case 'x':
 		// Restart game
-		if (confirm("restart"))
+		if (confirm("restart")) {
+			gLockNumGen = false;
 			init();
+		}
 		break;
 	case 'E':
 	case 'e':
