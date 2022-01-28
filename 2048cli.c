@@ -219,12 +219,6 @@ void init() {
 	backup_board();
 }
 
-// Return 1 if game is over, 0 otherwise
-int game_over() {
-	// TODO
-	return 0;
-}
-
 int quit_game() {
 	printf("\nThanks for playing!\n\n"
 	       "~ github.com/upperdim\n");
@@ -448,7 +442,7 @@ int main(int argc, char *argv[]) {
 	handle_args(&argc, argv);
 	init();
 
-	while (!game_over()) {
+	for (;;) {
 		if (!spawn_random_number()) {
 			printf("\nGame Over!\n");
 			break;
