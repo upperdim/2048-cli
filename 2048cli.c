@@ -185,7 +185,7 @@ int spawn_random_number() {
 			if (board[i][j].isAvailable)
 				++counter;
 			if ((counter - 1) == r) {
-				board[i][j].val = rand() % 2 == 0 ? 2 : 4;
+				board[i][j].val = rand() % 10 == 1 ? 4 : 2;
 				board[i][j].isAvailable = false;
 				goto done;
 			}
