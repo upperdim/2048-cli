@@ -29,7 +29,6 @@
 
 #define BOARD_ROW_CNT   4
 #define BOARD_COL_CNT   4
-#define	POS_CNT	(BOARD_ROW_CNT * BOARD_ROW_CNT)
 
 typedef struct {
 	int val;
