@@ -139,22 +139,22 @@ void handle_args(int *argc, char **argv) {
 }
 
 void print_menu() {
-	printf("\n\nSwipe with  : W, A, S, D\n"
-	           "Repeat move : R\n"
-	           "Restart game: X\n"
-	           "Exit        : E\n");
+	printf("\n\n    Swipe with  : W, A, S, D\n"
+	           "    Repeat move : R\n"
+	           "    Restart game: X\n"
+	           "    Exit        : E\n");
 }
 
 void print_board() {
-	printf("_____________________________\n");
+	printf("    _____________________________\n");
 
 	for (int i = 0; i < BOARD_ROW_CNT + BOARD_ROW_CNT - 1; ++i)
 		if (i % 2)
-			printf("|______|______|______|______|\n");
+			printf("    |______|______|______|______|\n");
 		else
-			printf("| %4.0d | %4.0d | %4.0d | %4.0d |\n", board[i/2][0].val, board[i/2][1].val, board[i/2][2].val, board[i/2][3].val);
+			printf("    | %4.0d | %4.0d | %4.0d | %4.0d |\n", board[i/2][0].val, board[i/2][1].val, board[i/2][2].val, board[i/2][3].val);
 	
-	printf("|______|______|______|______|\n");
+	printf("    |______|______|______|______|\n");
 }
 
 int get_valid_pos_count() {
